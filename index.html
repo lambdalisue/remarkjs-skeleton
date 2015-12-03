@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Laboratory meeting</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/slide.css">
+<textarea id="source"></textarea>
+<script src="js/remark.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script>
+var slideshow;
+$(function() {
+  $.when(
+    $.get('slides/00-begin.md'),
+    $.get('slides/01-introduction.md'),
+    $.get('slides/99-end.md')
+  ).done(function() {
+    var args = Array.prototype.slice.call(arguments);
+    var contents = args.reduce(function(previousValue, currentValue) {
+      return previousValue + currentValue[0] + "\n---\n";
+    }, '');
+    $('#source').html(contents);
+    slideshow = remark.create({
+      ratio: '16:9'
+    });
+  });
+});
+</script>

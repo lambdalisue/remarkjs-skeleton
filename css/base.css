@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css)
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+  font-size: 20px;
+}
+pre {
+  text-align: left;
+}
+code {
+  color: #bb4;
+  display: inline-block;
+  margin: 0 0.4em;
+}
+a {
+  color: #9f9fd7;
+  text-decoration: none;
+}
+strong {
+  color: #D04255;
+  font-style: normal;
+  text-decoration: none;
+}
+em {
+  color: #aaa;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+ul,ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 2em;
+}
+li {
+  margin-bottom: 0.8em;
+}
+li > p {
+  margin: 0;
+  padding: 0;
+}
+li > ul {
+  margin-top: 0.5em;
+}
+li li {
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+img, video {
+  max-width: 1000px;
+  max-height: 400px;
+}
+iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 1000px;
+  height: 400px;
+}
